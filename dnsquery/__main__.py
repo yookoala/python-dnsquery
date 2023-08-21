@@ -7,7 +7,6 @@ def main():
         raise Exception("Please provide at least 1 domain name to query")
     answers = dnsquery(
         qnames=sys.argv[1:],
-        callback=lambda item: item.address,
     )
     print("\n".join(answers))
 

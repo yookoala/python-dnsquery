@@ -4,7 +4,7 @@ import dns.message
 import dns.query
 import dns.rdatatype
 
-def dnsquery(qnames, callback=lambda item: item, where="https://cloudflare-dns.com/dns-query"):
+def dnsquery(qnames, callback=lambda item: item.address, where="https://cloudflare-dns.com/dns-query"):
     """
     Map qnames query answer items with the given function fn.
     Returns an array of string (supposedly IP addresses).
