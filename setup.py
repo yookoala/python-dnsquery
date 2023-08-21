@@ -52,8 +52,8 @@ setuptools.setup(
         "Topic :: Utilities",
     ],
     install_requires=[
-        "dnspython>=2.4.2",
-        "httpx>=0.24.1",
+        "dnspython[doh]",
+        "httpx",
     ],
-    python_requires=">=3.8",
+    python_requires=">=3.6",
  )
